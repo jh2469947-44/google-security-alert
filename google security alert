@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CluckSafe 🐔</title>
+
+<style>
+
+    body {
+
+        font-family: Arial, sans-serif;
+
+        margin: 0;
+
+        background: #f4f4f4;
+
+        color: #333;
+
+        text-align: center;
+
+    }
+
+    header {
+
+        background: #ffcc00;
+
+        padding: 20px;
+
+    }
+
+    h1 {
+
+        margin: 0;
+
+    }
+
+    .container {
+
+        padding: 20px;
+
+    }
+
+    .card {
+
+        background: white;
+
+        margin: 15px auto;
+
+        padding: 20px;
+
+        max-width: 500px;
+
+        border-radius: 10px;
+
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+
+    }
+
+    button {
+
+        background: #ff9900;
+
+        border: none;
+
+        padding: 10px 15px;
+
+        border-radius: 5px;
+
+        cursor: pointer;
+
+        color: white;
+
+    }
+
+    .hidden {
+
+        display: none;
+
+        margin-top: 10px;
+
+        text-align: left;
+
+    }
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>🐔 CluckSafe</h1>
+
+    <p>Protect your “eggs” (your info) online!</p>
+
+</header>
+
+<div class="container">
+
+    <div class="card">
+
+        <h2>🎣 What is Phishing?</h2>
+
+        <p>Phishing is when scammers try to trick you into giving personal info through fake emails, texts, or websites.</p>
+
+        <button onclick="toggle('phishing')">Read More</button>
+
+        <div id="phishing" class="hidden">
+
+            <p><strong>Common Signs:</strong></p>
+
+            <ul>
+
+                <li>Urgent messages (“Act now!”)</li>
+
+                <li>Fake links that look real</li>
+
+                <li>Requests for passwords or money</li>
+
+            </ul>
+
+            <p><strong>How to Avoid:</strong></p>
+
+            <ul>
+
+                <li>Check the sender’s email carefully</li>
+
+                <li>Don’t click suspicious links</li>
+
+                <li>Use two-factor authentication</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <h2>🪪 What is Identity Theft?</h2>
+
+        <p>Identity theft happens when someone steals your personal information to commit fraud.</p>
+
+        <button onclick="toggle('identity')">Read More</button>
+
+        <div id="identity" class="hidden">
+
+            <p><strong>Examples:</strong></p>
+
+            <ul>
+
+                <li>Opening accounts in your name</li>
+
+                <li>Using your credit card</li>
+
+                <li>Filing taxes as you</li>
+
+            </ul>
+
+            <p><strong>How to Avoid:</strong></p>
+
+            <ul>
+
+                <li>Keep personal info private</li>
+
+                <li>Monitor your bank statements</li>
+
+                <li>Use strong, unique passwords</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+function toggle(id) {
+
+    var section = document.getElementById(id);
+
+    if (section.classList.contains("hidden")) {
+
+        section.classList.remove("hidden");
+
+    } else {
+
+        section.classList.add("hidden");
+
+    }
+
+}
+
+</script>
+
+</body>
+
+</html>
